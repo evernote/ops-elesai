@@ -1,0 +1,302 @@
+                                     
+Adapter #0
+
+Number of Virtual Disks: 2
+Virtual Drive: 0 (Target Id: 0)
+Name                :
+RAID Level          : Primary-6, Secondary-0, RAID Level Qualifier-3
+Size                : 10.0 GB
+State               : Optimal
+Strip Size          : 64 KB
+Number Of Drives    : 4
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU
+Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU
+Access Policy       : Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Bad Blocks Exist: No
+Number of Spans: 1
+Span: 0 - Number of PDs: 4
+
+PD: 0 Information
+Enclosure Device ID: 252
+Slot Number: 0
+Enclosure position: 0
+Device Id: 5
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221103000000
+Connected Port Number: 1(path0) 
+Inquiry Data:       MJ1321YNG06SUAHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :26C (78.80 F)
+
+
+
+
+PD: 1 Information
+Enclosure Device ID: 252
+Slot Number: 1
+Enclosure position: 0
+Device Id: 7
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221102000000
+Connected Port Number: 2(path0) 
+Inquiry Data:       MJ1313YNG1YABCHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :24C (75.20 F)
+
+
+
+
+PD: 2 Information
+Enclosure Device ID: 252
+Slot Number: 2
+Enclosure position: 0
+Device Id: 6
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221101000000
+Connected Port Number: 3(path0) 
+Inquiry Data:       MJ1321YNG0WNGAHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :25C (77.00 F)
+
+
+
+
+PD: 3 Information
+Enclosure Device ID: 252
+Slot Number: 3
+Enclosure position: 0
+Device Id: 4
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221100000000
+Connected Port Number: 0(path0) 
+Inquiry Data:       MJ1313YNG1DTZCHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :28C (82.40 F)
+
+
+
+Virtual Drive: 1 (Target Id: 1)
+Name                :
+RAID Level          : Primary-6, Secondary-0, RAID Level Qualifier-3
+Size                : 5.447 TB
+State               : Optimal
+Strip Size          : 64 KB
+Number Of Drives    : 4
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU
+Current Cache Policy: WriteThrough, ReadAhead, Direct, No Write Cache if Bad BBU
+Access Policy       : Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Bad Blocks Exist: No
+Number of Spans: 1
+Span: 0 - Number of PDs: 4
+
+PD: 0 Information
+Enclosure Device ID: 252
+Slot Number: 0
+Enclosure position: 0
+Device Id: 5
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221103000000
+Connected Port Number: 1(path0) 
+Inquiry Data:       MJ1321YNG06SUAHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :26C (78.80 F)
+
+
+
+
+PD: 1 Information
+Enclosure Device ID: 252
+Slot Number: 1
+Enclosure position: 0
+Device Id: 7
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221102000000
+Connected Port Number: 2(path0) 
+Inquiry Data:       MJ1313YNG1YABCHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :24C (75.20 F)
+
+
+
+
+PD: 2 Information
+Enclosure Device ID: 252
+Slot Number: 2
+Enclosure position: 0
+Device Id: 6
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221101000000
+Connected Port Number: 3(path0) 
+Inquiry Data:       MJ1321YNG0WNGAHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :25C (77.00 F)
+
+
+
+
+PD: 3 Information
+Enclosure Device ID: 252
+Slot Number: 3
+Enclosure position: 0
+Device Id: 4
+Sequence Number: 2
+Media Error Count: 0
+Other Error Count: 0
+Predictive Failure Count: 0
+Last Predictive Failure Event Seq Number: 0
+PD Type: SATA
+Raw Size: 2.728 TB [0x15d50a3b0 Sectors]
+Non Coerced Size: 2.728 TB [0x15d40a3b0 Sectors]
+Coerced Size: 2.728 TB [0x15d400000 Sectors]
+Firmware state: Online, Spun Up
+SAS Address(0): 0x4433221100000000
+Connected Port Number: 0(path0) 
+Inquiry Data:       MJ1313YNG1DTZCHitachi HDS5C3030ALA630                 MEAOA580
+FDE Capable: Not Capable
+FDE Enable: Disable
+Secured: Unsecured
+Locked: Unlocked
+Needs EKM Attention: No
+Foreign State: None 
+Device Speed: 6.0Gb/s 
+Link Speed: 6.0Gb/s 
+Media Type: Hard Disk Device
+Drive:  Not Certified
+Drive Temperature :28C (82.40 F)
+
+
+
+
+Exit Code: 0x00

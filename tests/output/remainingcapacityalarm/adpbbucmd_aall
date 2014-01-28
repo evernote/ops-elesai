@@ -1,0 +1,69 @@
+                                     
+BBU status for Adapter: 0
+
+BatteryType: TMM01
+Voltage: 8796 mV
+Current: 0 mA
+Temperature: 25 C
+
+BBU Firmware Status:
+
+  Charging Status              : None
+  Voltage                                 : OK
+  Temperature                             : OK
+  Learn Cycle Requested	                  : No
+  Learn Cycle Active                      : No
+  Learn Cycle Status                      : OK
+  Learn Cycle Timeout                     : No
+  I2c Errors Detected                     : No
+  Battery Pack Missing                    : No
+  Battery Replacement required            : Yes
+  Remaining Capacity Low                  : Yes
+  Periodic Learn Required                 : No
+  Transparent Learn                       : No
+  No space to cache offload               : No
+  Pack is about to fail & should be replaced : No
+  Cache Offload premium feature required  : No
+  Module microcode update required        : No
+
+Battery state: 
+
+GasGuageStatus:
+  Fully Discharged        : Yes
+  Fully Charged           : Yes
+  Discharging             : No
+  Initialized             : No
+  Remaining Time Alarm    : No
+  Remaining Capacity Alarm: Yes
+  Discharge Terminated    : No
+  Over Temperature        : No
+  Charging Terminated     : Yes
+  Over Charged            : No
+
+  Pack energy             : 56 J 
+  Capacitance             : 70 
+  Remaining reserve space : 58 
+
+
+BBU Design Info for Adapter: 0
+
+Date of Manufacture: 11/08, 2011
+Design Capacity: 80 J
+Design Voltage: 8800 mV
+Serial Number: 4051
+Manufacture Name: LSXAAAX
+Device Name: TMM01
+Device Chemistry: SCap
+Battery FRU: N/A
+TMM FRU: N/A
+Module Version: 103308
+
+
+BBU Properties for Adapter: 0
+
+Auto Learn Period: 2592000 Sec
+Next Learn time: 446420164 Sec 
+Learn Delay Interval:0 Hours
+Auto-Learn Mode: Enabled
+
+Exit Code: 0x00

@@ -1,0 +1,57 @@
+                                     
+BBU status for Adapter: 0
+
+BatteryType: CVPM02
+Voltage: 9409 mV
+Current: 0 mA
+Temperature: 28 C
+BBU Firmware Status:
+
+  Charging Status              : None
+  Voltage                                 : OK
+  Temperature                             : OK
+  Learn Cycle Requested	                  : No
+  Learn Cycle Active                      : No
+  Learn Cycle Status                      : OK
+  Learn Cycle Timeout                     : No
+  I2c Errors Detected                     : No
+  Battery Pack Missing                    : No
+  Battery Replacement required            : No
+  Remaining Capacity Low                  : No
+  Periodic Learn Required                 : No
+  Transparent Learn                       : No
+  No space to cache offload               : No
+  Pack is about to fail & should be replaced : No
+  Cache Offload premium feature required  : No
+  Module microcode update required        : No
+BBU GasGauge Status: 0x0028 
+  Pack energy             : 296 J 
+  Capacitance             : 0 
+  Remaining reserve space : 96 
+
+
+  Battery backup charge time : 0 hours
+
+BBU Design Info for Adapter: 0
+
+Date of Manufacture: 09/20, 2012
+Design Capacity: 283 J
+Design Voltage: 9411 mV
+Serial Number: 60
+Manufacture Name: LSI
+Device Name: CVPM02
+Device Chemistry: EDLC
+Battery FRU: N/A
+TMM FRU: N/A
+Module Version = 25849-01
+  Transparent Learn = 1
+  App Data = 0
+
+BBU Properties for Adapter: 0
+
+  Auto Learn Period: 30 Days
+  Next Learn time: Feb 9 2014 01:35:33  
+  Learn Delay Interval:0 Hours
+  Auto-Learn Mode: Transparent
+
+Exit Code: 0x00

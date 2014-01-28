@@ -56,7 +56,7 @@ module Elesai; module Action
       end
 
       if hotspare < @options[:hotspare].to_i
-        plugin_status = :warning if plugin_status.empty?
+        plugin_status = :warning unless plugin_status == :critical
         plugin_output += " hotspare low watermark (require #{@options[:hotspare]}, have #{hotspare})"
       end
 
