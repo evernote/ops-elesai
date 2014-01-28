@@ -64,7 +64,7 @@ module Elesai
         opts.on('-V', '--version',                                             "Display #{ID} version")                              { output_message VERSION, 0 }
         opts.on_tail('--help',                                                 "Show this message")                                  { @options[:HELP] = true }
 
-        opts.order!(@arguments)
+        opts.order!(@arguments) unless @whoami == :check_lsi
         output_message opts, 0 if (@arguments.size == 0 and @whoami != :check_lsi) or @options[:HELP]
 
         @action = @whoami == :check_lsi ? :check : @arguments.shift.to_sym
