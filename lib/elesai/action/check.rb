@@ -9,7 +9,7 @@ module Elesai; module Action
     include Senedsa
 
     def initialize(arguments,options)
-      @options = options.merge!({ :monitor => :nagios, :mode => :active })
+      @options = options.merge!({ :monitor => :nagios, :mode => :active, :diskcachepolicy => nil })
       @arguments = []
       @lsi = nil
 
@@ -17,12 +17,13 @@ module Elesai; module Action
       opts.banner = "Usage: #{ID} [options] check [check_options]"
       opts.separator ""
       opts.separator "Check Options"
-      opts.on('--hotspare MIN',                      Integer,              "Minimum number of hotspares")                       { |o| @options[:hotspare]       = o }
-      opts.on('-M', '--monitor [nagios]',            [:nagios],            "Monitoring system")                                 { |o| @options[:monitor]        = o }
-      opts.on('-m', '--mode [active|passive]',       [:active, :passive],  "Monitoring mode")                                   { |o| @options[:mode]           = o }
-      opts.on('-H', '--nsca_hostname HOSTNAME',      String,               "NSCA hostname to send passive checks")              { |o| @options[:nsca_hostame]   = o }
-      opts.on('-c', '--config CONFIG',               String,               "Path to Senedsa (send_nsca) configuration" )        { |o| @options[:senedsa_config] = o }
-      opts.on('-S', '--svc_descr SVC_DESR',          String,               "Nagios service description")                        { |o| @options[:svc_descr]      = o }
+      opts.on('--hotspare MIN',                      Integer,              "Minimum number of hotspares")                       { |o| @options[:hotspare]        = o }
+      opts.on('--diskcachepolicy DISKCACHEPOLICY',   String,               "Disk cache policy/Disk Write Cache checks")         { |o| @options[:diskcachepolicy] = o }
+      opts.on('-M', '--monitor [nagios]',            [:nagios],            "Monitoring system")                                 { |o| @options[:monitor]         = o }
+      opts.on('-m', '--mode [active|passive]',       [:active, :passive],  "Monitoring mode")                                   { |o| @options[:mode]            = o }
+      opts.on('-H', '--nsca_hostname HOSTNAME',      String,               "NSCA hostname to send passive checks")              { |o| @options[:nsca_hostame]    = o }
+      opts.on('-c', '--config CONFIG',               String,               "Path to Senedsa (send_nsca) configuration" )        { |o| @options[:senedsa_config]  = o }
+      opts.on('-S', '--svc_descr SVC_DESR',          String,               "Nagios service description")                        { |o| @options[:svc_descr]       = o }
       opts.order!(arguments)
 
       options_valid?
@@ -62,6 +63,10 @@ module Elesai; module Action
 
       @lsi.virtualdrives.each do |vd|
         vd_plugin_string = "[VD:#{vd._id}]"
+        if @options[:diskcachepolicy] and vd[:diskcachepolicy] != @options[:diskcachepolicy]
+          plugin_output += " #{vd_plugin_string}:diskcachepolicy is not #{@options[:diskcachepolicy]}"
+          plugin_status = :warning
+        end
         case vd[:state]
           when :offline, :failed
             plugin_output += " #{vd_plugin_string}:#{vd[:state]}"
@@ -124,8 +129,13 @@ module Elesai; module Action
       end
 
       if plugin_output.empty? and plugin_status.empty?
-        @lsi.adapters.each do |adapter|
-          plugin_output += " [#{adapter._id}: #{adapter[:versions][:productname].gsub(/\s+/,'_')} OK]"
+        if @lsi.adapters.empty?
+          plugin_status = :warning
+          plugin_output = 'no adapters found'
+        else
+          @lsi.adapters.each do |adapter|
+            plugin_output += " [#{adapter._id}: #{adapter[:versions][:productname].gsub(/\s+/,'_')} OK]"
+          end
         end
       end
       plugin_status = :ok if plugin_status.empty?
